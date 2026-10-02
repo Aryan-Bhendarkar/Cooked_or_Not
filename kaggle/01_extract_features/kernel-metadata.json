@@ -1,0 +1,15 @@
+{
+  "id": "aryanbhendarkar/cooked-or-not-01-extract-features",
+  "title": "cooked-or-not-01-extract-features",
+  "code_file": "01_extract_features.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": ["cooked-or-not"],
+  "kernel_sources": [],
+  "model_sources": []
+}

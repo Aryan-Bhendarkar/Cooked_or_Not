@@ -1,0 +1,22 @@
+# data & outputs
+data/*
+!data/.gitkeep
+artifacts/*
+!artifacts/.gitkeep
+submissions/*
+!submissions/.gitkeep
+
+# python / jupyter
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.npy
+*.npz
+*.pt
+*.pth
+*.zip
+
+# secrets
+kaggle.json
+.env

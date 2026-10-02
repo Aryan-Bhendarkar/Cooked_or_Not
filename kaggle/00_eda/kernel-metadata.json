@@ -1,0 +1,15 @@
+{
+  "id": "aryanbhendarkar/cooked-or-not-00-eda",
+  "title": "cooked-or-not-00-eda",
+  "code_file": "00_eda.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [],
+  "competition_sources": ["cooked-or-not"],
+  "kernel_sources": [],
+  "model_sources": []
+}

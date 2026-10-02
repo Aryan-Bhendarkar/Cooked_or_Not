@@ -1,0 +1,14 @@
+# Local environment: smoke tests, small GPU tasks, analysis on saved features, submissions.
+# torch (CUDA build, already installed here: 2.6.0+cu124) and transformers are pre-installed on Kaggle.
+# Locally install once: pip install transformers   (needed to smoke-test the DINOv2 notebook)
+numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+pillow
+matplotlib
+tqdm
+kaggle
+jupyter
+ipykernel
