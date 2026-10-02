@@ -9,6 +9,9 @@
 7. **Validation under shift**: GroupKFold (leakage), scene-cluster hold-out, adversarial validation (train-vs-test classifier reveals shortcuts).
 8. **Shortcut learning + augmentation**: mask overlays, colour jitter, blur, random crop, random JPEG, h-flip, random temporal crop. No time reversal.
 
+## Gaps / lessons
+- (Oct 2) Shortcut features: raw frame-difference size depends on sharpness (train 6.5 vs test 9.3), so "big motion = crash" would flag ordinary test clips. Prefer relative features (late vs early motion in the same clip). Aryan got this right after a simplified explanation.
+
 ## Self-check results (Sep 29)
 - "Danger detector" fails because train negatives are already tense; the model must detect the event, not the mood. (needs reinforcing)
 - Twin structure => scene has zero label signal in train. (half right)

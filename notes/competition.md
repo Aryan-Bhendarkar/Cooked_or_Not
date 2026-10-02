@@ -43,7 +43,10 @@ Example table in the brief (T=0.90) disagrees with the formula: formula gives 0.
 - Grading formula confirmed from the course doc: Marks = 100*sqrt((S-0.5)/(T-0.5)), capped to [0,100].
 
 ## EDA findings (fill after running kaggle/00_eda)
-- Crash timing in positives:
-- Test vs train visual differences (overlays, night, resolution feel):
-- Twin overlap pattern (which frames shared):
-- Brightness / sharpness / motion shift:
+(Oct 2, from kaggle/00_eda, 200 clips per group; plots in artifacts/eda/eda/)
+- Crash timing in positives: no single spike. Mean |frame diff| of crash clips RAMPS from ~6.8 (t=0) to ~12 (t=20-28); no-crash stays flat ~7.4. Crash happens in the later half, build-up is gradual.
+- Test vs train visual differences: train frames carry channel/compilation watermarks and "21+" badges (same in both clips of a pair, so no label signal but a source shortcut); test has native camera date/time stamps, no watermarks. Different camera styles/regions, test looks sharper.
+- Twin overlap pattern: the crash clip's first 10-15 frames (0-9/0-14) equal the no-crash twin's LAST frames (20-29/19-29). So the no-crash clip is the EARLIER one; crash clip starts inside it and runs on into the crash. Confirms leakage risk with random folds.
+- Brightness / sharpness / motion shift: brightness same (108.8 vs 109.5), contrast similar (61.8 vs 64.5), **sharpness differs strongly (train 6.5, test 9.3)**. Mean frame-diff: train crash 9.6, no-crash 7.5, test 10.4 -> raw motion magnitude is inflated by sharpness, not trustworthy across domains.
+- **Test frame-diff curve zigzags with period 2** (alternating ~9.2 / ~11): test frames have a duplicate/interpolation pattern from frame-rate conversion. Train shows only weak bumps every ~8 frames. => use stride-2 differences or smoothing, and scale-free features (late/early motion ratio), not raw magnitudes.
+- Plan changes: (1) blur/downscale augmentation or fixed pre-blur so sharpness is not a domain cue, (2) relative temporal features instead of absolute motion, (3) crop mostly later frames for positives, (4) mask watermark/timestamp regions.

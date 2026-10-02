@@ -56,7 +56,7 @@ Competition started ~Sep 21 2026; on Sep 29 it showed "6 days to go" -> ends **O
 - [x] Concepts taught (see notes/concepts.md); self-check answered
 - [x] Clean repo setup (data flattened into `data/`, EDA moved to `kaggle/00_eda`, `.vscode/`, check_submission.py)
 - [x] Kaggle configured (API token in ~/.kaggle/access_token, username set, notebooks attach competition `cooked-or-not`)
-- [ ] Run `kaggle/00_eda`, record findings in notes/competition.md ("EDA findings")
+- [x] Run `kaggle/00_eda`, record findings in notes/competition.md ("EDA findings")
 - [ ] Extract DINOv2 frame embeddings on Kaggle (`kaggle/01_extract_features`)
 - [ ] Baseline: pooled embeddings + temporal diffs -> logistic regression, grouped CV
 - [ ] Motion features (frame diff, optical flow stats) -> LightGBM
