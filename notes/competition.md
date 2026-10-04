@@ -40,6 +40,7 @@ Example table in the brief (T=0.90) disagrees with the formula: formula gives 0.
 ## Rules page
 - (Oct 2, per Aryan) No restrictions on techniques; data was downloaded from Kaggle itself, so notebooks attach the competition data directly (no upload).
 - Still unknown: max submissions/day, number of final submissions. Hand-labeling test and finding source datasets remain banned.
+- (Oct 4, per Aryan, after reading the Rules page) Using unlabeled test clips (self-training / pseudo-labels / test-time adaptation) is ALLOWED. Hand-labeling test and identifying source datasets remain banned.
 - Grading formula confirmed from the course doc: Marks = 100*sqrt((S-0.5)/(T-0.5)), capped to [0,100].
 
 ## EDA findings (fill after running kaggle/00_eda)
