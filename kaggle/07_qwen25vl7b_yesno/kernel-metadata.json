@@ -1,0 +1,17 @@
+{
+  "id": "aryanbhendarkar/cooked-or-not-07-qwen25vl7b-yesno",
+  "title": "cooked-or-not-07-qwen25vl7b-yesno",
+  "code_file": "07_qwen25vl7b_yesno.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [
+    "cooked-or-not"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}
