@@ -1,0 +1,17 @@
+{
+  "id": "aryanbhendarkar/cooked-or-not-12-videomae-finetune",
+  "title": "cooked-or-not-12-videomae-finetune",
+  "code_file": "12_videomae_finetune.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [
+    "cooked-or-not"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}
